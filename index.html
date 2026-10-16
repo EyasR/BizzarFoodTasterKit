@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Tracker | Bizarre Foods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bizarre Foods Taste Tracker 🐸🐌</h1>
+            <p>Log your adventurous eats!</p>
+        </header>
+
+        <section class="tracker-card">
+            <div class="input-group">
+                <label for="food-name">What did you try?</label>
+                <input type="text" id="food-name" placeholder="e.g., Escargot, Frog Legs...">
+            </div>
+
+            <div class="input-group">
+                <label for="food-category">Category</label>
+                <select id="food-category">
+                    <option value="Seafood">Seafood</option>
+                    <option value="Insects">Insects</option>
+                    <option value="Reptile/Amphibian">Reptile/Amphibian</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="rating">Rating (1-10)</label>
+                <input type="number" id="rating" min="1" max="10" value="5">
+            </div>
+
+            <button id="add-btn">Log Tasting</button>
+        </section>
+
+        <section class="results">
+            <h2>My Tasting History</h2>
+            <ul id="tasting-list">
+                <!-- JavaScript will create and append <li> elements here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
